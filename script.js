@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function(){
     status.textContent = 'Sending message...';
     // simulate async send
     setTimeout(() => {
-      status.textContent = 'Thanks — your message was sent (demo). I will reply to your email soon.';
+      status.textContent = 'Thanks — your message was sent. I will reply to your email soon.';
       form.reset();
     }, 900);
   });
