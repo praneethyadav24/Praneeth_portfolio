@@ -37,17 +37,3 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     })
   });
-
-  // simple fake contact submit (no backend) - shows success message
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('formStatus');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    status.textContent = 'Sending message...';
-    // simulate async send
-    setTimeout(() => {
-      status.textContent = 'Thanks — your message was sent. I will reply to your email soon.';
-      form.reset();
-    }, 900);
-  });
-});
